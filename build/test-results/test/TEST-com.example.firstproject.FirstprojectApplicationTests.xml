@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.firstproject.FirstprojectApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-05-22T07:25:33.511Z" hostname="DESKTOP-GOASOS6" time="0.743">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.example.firstproject.FirstprojectApplicationTests" time="0.743"/>
+  <system-out><![CDATA[16:25:25.607 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.firstproject.FirstprojectApplicationTests]: FirstprojectApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:25:25.794 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.firstproject.FirstprojectApplication for test class com.example.firstproject.FirstprojectApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.5)
+
+2025-05-22T16:25:26.402+09:00  INFO 26472 --- [firstproject] [    Test worker] c.e.f.FirstprojectApplicationTests       : Starting FirstprojectApplicationTests using Java 17.0.15 with PID 26472 (started by user in C:\firstproject)
+2025-05-22T16:25:26.406+09:00  INFO 26472 --- [firstproject] [    Test worker] c.e.f.FirstprojectApplicationTests       : No active profile set, falling back to 1 default profile: "default"
+2025-05-22T16:25:27.484+09:00  INFO 26472 --- [firstproject] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-22T16:25:27.638+09:00  INFO 26472 --- [firstproject] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 133 ms. Found 1 JPA repository interface.
+2025-05-22T16:25:28.364+09:00  INFO 26472 --- [firstproject] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-22T16:25:28.752+09:00  INFO 26472 --- [firstproject] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:d5f113cf-e944-48b2-b84a-e3ca35e9bea2 user=SA
+2025-05-22T16:25:28.758+09:00  INFO 26472 --- [firstproject] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-22T16:25:28.952+09:00  INFO 26472 --- [firstproject] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-22T16:25:29.082+09:00  INFO 26472 --- [firstproject] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-22T16:25:29.176+09:00  INFO 26472 --- [firstproject] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-22T16:25:29.909+09:00  INFO 26472 --- [firstproject] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-22T16:25:30.095+09:00  INFO 26472 --- [firstproject] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-22T16:25:31.498+09:00  INFO 26472 --- [firstproject] [    Test worker] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.example.firstproject.entity.Article (class must be instantiated by Interceptor)
+2025-05-22T16:25:31.918+09:00  INFO 26472 --- [firstproject] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-22T16:25:31.977+09:00  INFO 26472 --- [firstproject] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-22T16:25:32.644+09:00  WARN 26472 --- [firstproject] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-22T16:25:33.482+09:00  INFO 26472 --- [firstproject] [    Test worker] c.e.f.FirstprojectApplicationTests       : Started FirstprojectApplicationTests in 7.461 seconds (process running for 9.218)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
