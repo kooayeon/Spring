@@ -47,7 +47,7 @@ jobs:
           key: ${{ secrets.EC2_KEY }}  # base64로 인코딩된 pem 키 (GitHub Secrets에 등록된 값)
           script: |
             aws ecr get-login-password --region ap-northeast-2 | \
-            docker login --username AWS --password-stdin <ECR URL> 
-            docker pull <ECR URL>:latest
+            docker login --username AWS --password-stdin 714652266897.dkr.ecr.ap-northeast-2.amazonaws.com/kooayeon
+            docker pull 714652266897.dkr.ecr.ap-northeast-2.amazonaws.com/kooayeon:latest
             docker stop app || true && docker rm app || true
-            docker run -d --name app -p 8080:8080 <ECR URL>:latest
+            docker run -d --name app -p 8080:8080 714652266897.dkr.ecr.ap-northeast-2.amazonaws.com/kooayeon:latest
