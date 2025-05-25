@@ -29,10 +29,10 @@ jobs:
         run: ./gradlew clean build -x test  # Gradle로 프로젝트를 빌드함. 테스트는 제외 (-x test)
 
       - name: Login to ECR
-        uses: aws-actions/amazon-ecr-login@v1  # ECR에 로그인. 이후 Docker push를 하기 위함
+        uses: aws-actions/amazon-ecr-login@v2  # ECR에 로그인. 이후 Docker push를 하기 위함
         with:
           aws-region: ${{ env.AWS_REGION }}
-
+          mask-password: true
       - name: Build and Push Docker Image
         run: |
           IMAGE_URI=714652266897.dkr.ecr.ap-northeast-2.amazonaws.com/kooayeon:latest  # 사용할 Docker 이미지 태그 정의
